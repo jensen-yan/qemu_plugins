@@ -17,4 +17,4 @@ clean:
 	rm -f *.so
 
 run:
-	qemu-riscv64  -plugin ./libinsn.so,match=ecall -d plugin ~/tests/riscv_tests/hello
+	qemu-riscv64  -plugin ./libtbstat.so -d plugin ~/tests/riscv_tests/hello
